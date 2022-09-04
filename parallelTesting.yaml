@@ -1,0 +1,12 @@
+name: Suite
+threadCount: 4
+parallel: tests
+configFailurePolicy: skip
+tests:
+  - name: Test
+  parallel: tests
+  classes:
+    - com.crm.qa.testcases.ContactsPageTest
+    - com.crm.qa.testcases.FreeCrmTest
+    - com.crm.qa.testcases.LoginPageTest
+
